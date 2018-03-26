@@ -20,6 +20,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
 	<!-- 映射文件的配置 -->
 	<mappers>
-		<package name="com.gxa.mapper"/>
+		<package name="com.crm.mapper"/>
 	</mappers>
 </configuration>

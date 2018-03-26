@@ -14,7 +14,7 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
       <!-- 扫描  所有注解 -->
-      <context:component-scan base-package="com.gxa"></context:component-scan>
+      <context:component-scan base-package="com.crm"></context:component-scan>
       
       <!-- 获得properties文件数据 -->
       <context:property-placeholder  location="classpath:db.properties"/>
@@ -46,7 +46,7 @@
 	<!-- *****
 	扫描该包下的类    利用SqlSessionFactory产生代理对象 并且注入spring容器  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage"  value="com.gxa.mapper"></property>
+		<property name="basePackage"  value="com.crm.mapper"></property>
 		<!-- <property name="sqlSessionFactory" ref="sqlSessionFactory"></property> -->
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
 	</bean>
@@ -61,7 +61,7 @@
 	<!-- spring整合Mybatis步骤5：使用xml完成事务的配置
 	-->
 	<aop:config>
-		<aop:pointcut id="trPointCut" expression="execution(public * com.gxa.service.impl.*.*(..))" />
+		<aop:pointcut id="trPointCut" expression="execution(public * com.crm.service.impl.*.*(..))" />
 		<aop:advisor advice-ref="myTx" pointcut-ref="trPointCut" />
 	</aop:config>
 	<tx:advice id="myTx" transaction-manager="transactionManager">

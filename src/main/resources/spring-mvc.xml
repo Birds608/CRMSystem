@@ -16,7 +16,7 @@
         <!-- 控制器 bean   name  就是页面请求路径-->
         
 		   <!-- 扫描注解 -->
-        <context:component-scan base-package="com.gxa.controller"></context:component-scan>
+        <context:component-scan base-package="com.crm.controller"></context:component-scan>
 
         <!-- 启动MVC 注解模式   -->
         <mvc:annotation-driven >
