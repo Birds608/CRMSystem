@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <!-- 
 	namespace唯一表示此名字下的crud语句
  -->
-<mapper namespace="com.crm.mapper.DeptMapper">
+<mapper namespace="com.crm.mapper.FeedbackMapper">
 	
 	
 </mapper>
